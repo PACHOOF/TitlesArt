@@ -9,3 +9,45 @@ To use TitlesArt, you can install it directly in your Python environment. If you
 ```bash
 pip install -r requirements.txt
 pip install titlesart
+```
+
+## Usage
+
+### 1. Importing the Library:
+You can use the library by importing the titles_art module and calling the appropriate functions.
+```bash
+from titles_art import main
+
+# Text you want to convert into ASCII art
+text = "HELLO WORLD"
+
+# Convert the text into its ASCII art representation
+ascii_art = main.textToCol(text)
+
+# Print the ASCII art
+main.printText(ascii_art)
+```
+
+### 2. Available Functions:
+
+- textToCol(text): Converts the input text into a list of ASCII art representations.
+- printText(text_arrays): Prints the ASCII art in a readable format on the console.
+
+## Example
+
+Here is a simple example of how to use the library to create and print a title:
+```bash
+from titles_art import main
+
+text = "hello world"
+ascii_art = main.textToCol(text)
+main.printText(ascii_art)
+```
+## Contributing
+If you'd like to contribute to this project, please follow these steps:
+
+- Fork the repository.
+- Create a new branch for your feature: git checkout -b new-feature.
+- Make your changes and commit them: git commit -am 'Add new feature'.
+- Push to your forked repository: git push origin new-feature.
+- Open a Pull Request to propose your changes.
