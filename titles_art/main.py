@@ -1,4 +1,4 @@
-from titles_art.abecedario_ascii import abcii
+from titles_art.abecedario_ascii import *
 
 def text_to_col(text):
     return [abcii.space() if c == ' ' else getattr(abcii, c.lower())() for c in text if c == ' ' or hasattr(abcii, c.lower())]
