@@ -46,8 +46,8 @@ main.printText(ascii_art)
 ## Contributing
 If you'd like to contribute to this project, please follow these steps:
 
-- Fork the repository.
-- Create a new branch for your feature: git checkout -b new-feature.
-- Make your changes and commit them: git commit -am 'Add new feature'.
-- Push to your forked repository: git push origin new-feature.
-- Open a Pull Request to propose your changes.
+1. Fork the repository.
+2. Create a new branch for your feature: git checkout -b new-feature.
+3. Make your changes and commit them: git commit -am 'Add new feature'.
+4. Push to your forked repository: git push origin new-feature.
+5. Open a Pull Request to propose your changes.
