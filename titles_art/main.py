@@ -1,9 +1,10 @@
-from titles_art.abecedario_ascii import *
+# Importa las funciones necesarias del archivo abecedario_ascii.py
+from titles_art.abecedario_ascii import a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, space
 
-def text_to_col(text):
-    return [abcii.space() if c == ' ' else getattr(abcii, c.lower())() for c in text if c == ' ' or hasattr(abcii, c.lower())]
+def textToCol(text):
+    # Código para convertir el texto en arte ASCII usando las funciones importadas
+    return [space() if c == ' ' else globals()[c.lower()]() for c in text if c == ' ' or c.lower() in globals()]
 
-def print_text(text_arrays):
-    # zip(*text_arrays) "desempaqueta" las sublistas y las agrupa por índice
+def printText(text_arrays):
     for line in zip(*text_arrays):
         print("".join(line))
