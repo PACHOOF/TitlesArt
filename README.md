@@ -31,17 +31,21 @@ main.printText(ascii_art)
 ### 2. Available Functions:
 
 - textToCol(text): Converts the input text into a list of ASCII art representations.
-- printText(text_arrays): Prints the ASCII art in a readable format on the console.
+- printText(text_arrays, color): Prints the ASCII art in a readable format on the console. Available colors are red, green, blue, yellow, cyan, magenta, white, black
 
 ## Example
 
 Here is a simple example of how to use the library to create and print a title:
 ```bash
-from titles_art import main
+import titles_art.main as tl
+# Text you want to convert into ASCII art
+text = "HELLO WORLD"
 
-text = "hello world"
-ascii_art = main.textToCol(text)
-main.printText(ascii_art)
+# Convert the text into its ASCII art representation
+ascii_art = tl.textToCol(text)
+
+# Print the ASCII art
+tl.printText(ascii_art, "red")
 ```
 ## Contributing
 If you'd like to contribute to this project, please follow these steps:
