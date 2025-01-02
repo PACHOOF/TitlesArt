@@ -31,7 +31,7 @@ main.printText(ascii_art)
 ### 2. Available Functions:
 
 - textToCol(text): Converts the input text into a list of ASCII art representations.
-- printText(text_arrays, color): Prints the ASCII art in a readable format on the console. Available colors are red, green, blue, yellow, cyan, magenta, white, black
+- printText(text_arrays, color): Prints the ASCII art in a readable format on the console. Available colors are red, green, blue, yellow, cyan, magenta, white, black.
 
 ## Example
 
